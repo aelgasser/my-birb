@@ -19,3 +19,7 @@ matrix:
       env: COMMAND=test
     - name: Analyze
       env: COMMAND=analyze
+branches:
+  only:
+    - master
+    
