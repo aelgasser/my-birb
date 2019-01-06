@@ -12,7 +12,7 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 * [x] [code](/aelgasser/my-birb/tree/initial-theme), Day five: Initial Theme 
 * [x] [code](/aelgasser/my-birb/tree/no-content-widget), Day six: No content widget (used illustration _a day at the park_ from [unDraw](https://undraw.co)) 
 * [x] [code](/aelgasser/my-birb/tree/list-of-posts), Day seven: A list of posts
-* [ ] Day eight: Extract post item widget
+* [x] [code](/aelgasser/my-birb/tree/add-post-item-widget), Day eight: Extract post item widget
 * [ ] Day nine: Post model and mock data
 * [ ] Day ten: Render with StreamBuilder
 * [ ] Day eleven: Stream transforms and failing tests

@@ -1,3 +1,4 @@
+import 'package:birb/post_item.dart';
 import 'package:flutter/material.dart';
 
 class PostsList extends StatelessWidget {
@@ -7,17 +8,10 @@ class PostsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(children: _items.map((int index) => _buildBirdCard(context, index)).toList());
+    return ListView(children: _buildList(context));
   }
 
-  Card _buildBirdCard(BuildContext context, int index) {
-    return Card(
-        child: Container(
-          height: 300.0,
-          child: const Center(
-            child: Text('Prim Birb'),
-          )
-        ),
-      );
+  List<PostItem> _buildList(BuildContext context) {
+    return _items.map((int index) => const PostItem()).toList();
   }
 }
