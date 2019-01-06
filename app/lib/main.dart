@@ -1,4 +1,4 @@
-import 'package:birb/no_content.dart';
+import 'package:birb/posts_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         elevation: 0.0,
       ),
-      body: const NoContent(),
+      body: const PostsList(),
     );
   }
 }
