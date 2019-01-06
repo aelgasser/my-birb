@@ -11,7 +11,7 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 * [x] [code](/aelgasser/my-birb/tree/upgrade-flutter), Day four: Upgrading to latest version of flutter (already running v1.0.0) 
 * [x] [code](/aelgasser/my-birb/tree/initial-theme), Day five: Initial Theme 
 * [x] [code](/aelgasser/my-birb/tree/no-content-widget), Day six: No content widget (used illustration _a day at the park_ from [unDraw](https://undraw.co)) 
-* [ ] Day seven: A list of posts
+* [x] [code](/aelgasser/my-birb/tree/list-of-posts), Day seven: A list of posts
 * [ ] Day eight: Extract post item widget
 * [ ] Day nine: Post model and mock data
 * [ ] Day ten: Render with StreamBuilder
