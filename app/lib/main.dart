@@ -1,3 +1,4 @@
+import 'package:birb/no_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -49,9 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         elevation: 0.0,
       ),
-      body: const Center(
-        child: Text('No Birb is birbing'),                      
-      ),
+      body: const NoContent(),
     );
   }
 }
