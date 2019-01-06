@@ -7,7 +7,7 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 
 * [x] Day one: Create the App 
 * [x] Day two: Continuous Integration - Setup Travis CI [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=add-travis-ci)](https://travis-ci.org/aelgasser/my-birb)
-* [x] Day three: Continuous Linting (using Flutter analysis options from https://raw.githubusercontent.com/flutter/flutter/v1.0.0/analysis_options.yaml) [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=add-linting-to-ci)](https://travis-ci.org/aelgasser/my-birb)
+* [x] Day three: Continuous Linting (using [Flutter analysis options]( https://raw.githubusercontent.com/flutter/flutter/v1.0.0/analysis_options.yaml) [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=add-linting-to-ci)](https://travis-ci.org/aelgasser/my-birb)
 * [x] Day four: Upgrading to latest version of flutter (already running v1.0.0) [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=upgrade-flutter)](https://travis-ci.org/aelgasser/my-birb)
 * [x] Day five: Initial Theme [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=initial-theme)](https://travis-ci.org/aelgasser/my-birb)
 * [x] Day six: No content widget (used illustration _a day at the park_ from [unDraw](https://undraw.co) [![Build Status](https://travis-ci.org/aelgasser/my-birb.svg?branch=no-content-widget)](https://travis-ci.org/aelgasser/my-birb)
