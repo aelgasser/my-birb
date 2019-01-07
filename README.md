@@ -17,7 +17,7 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 * [x] [code](/aelgasser/my-birb/tree/use-streams), Day ten: Render with StreamBuilder
 * [x] [code](/aelgasser/my-birb/tree/use-posts), Day eleven: Stream transforms and failing tests
 * [x] [code](/aelgasser/my-birb/tree/use-faker), Day twelve: (interlude) Introduce Faker
-* [ ] Day thirteen: Rendering images from network
+* [x] [code](/aelgasser/my-birb/tree/render-post-items), Day thirteen: Rendering images from network
 * [ ] Day fourteen: Authentication
 * [ ] Day fifteen: Configure Firebase Auth for Sign in with Google on Android
 * [ ] Day sixteen: Configure Firebase Auth for Sign in with Google on iOS
