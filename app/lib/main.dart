@@ -1,3 +1,6 @@
+import 'dart:convert';
+
+import 'package:birb/models/post.dart';
 import 'package:birb/posts_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -40,15 +43,11 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  final Stream<List<int>> _posts = Stream<List<int>>.fromIterable(
-    <List<int>>[
-      List<int>.generate(10, (int i) => i),
-    ]
-  );
-  
+class _MyHomePageState extends State<MyHomePage> { 
   @override
   Widget build(BuildContext context) {
+    final Stream<List<Post>> posts = _loadPosts(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -56,7 +55,19 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         elevation: 0.0,
       ),
-      body: PostsList(_posts),
+      body: PostsList(posts),
     );
+  }
+
+  Stream<List<Post>> _loadPosts(BuildContext context) {
+    return DefaultAssetBundle.of(context)
+            .loadString('assets/posts.json')    
+            .then<List<dynamic>>((String value) => json.decode(value))
+            .asStream()
+            .map(_convertToPosts);
+  }
+
+  List<Post> _convertToPosts(List<dynamic> data) {
+    return data.map((dynamic item) => Post.fromMap(item)).toList();
   }
 }

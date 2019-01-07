@@ -1,3 +1,4 @@
+import 'package:birb/models/post.dart';
 import 'package:birb/no_content.dart';
 import 'package:birb/post_item.dart';
 import 'package:flutter/material.dart';
@@ -5,17 +6,17 @@ import 'package:flutter/material.dart';
 class PostsList extends StatelessWidget {
   const PostsList(this.posts);
 
-  final Stream<List<int>> posts;
+  final Stream<List<Post>> posts;
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<List<int>>(
+    return StreamBuilder<List<Post>>(
       stream: posts,
       builder: _buildFromSnapshot
     );  
   }
 
-  Widget _buildFromSnapshot(BuildContext context, AsyncSnapshot<List<int>> snapshot) {
+  Widget _buildFromSnapshot(BuildContext context, AsyncSnapshot<List<Post>> snapshot) {
       if( snapshot.hasError ) {
         return _buildError(snapshot);
       }
@@ -31,7 +32,7 @@ class PostsList extends StatelessWidget {
       return _buildList(snapshot.data);
   }
 
-  Text _buildError(AsyncSnapshot<List<int>> snapshot) {
+  Text _buildError(AsyncSnapshot<List<Post>> snapshot) {
     return Text('Error: ${snapshot.error}');
   }
 
@@ -39,9 +40,9 @@ class PostsList extends StatelessWidget {
     return const Text('Loading...');
   }
 
-  ListView _buildList(List<int> items) {
+  ListView _buildList(List<Post> items) {
     return ListView(
-      children: items.map((int index) => const PostItem()).toList(),
+      children: items.map((Post post) => PostItem(post)).toList(),
     );
   }
 }

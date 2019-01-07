@@ -15,8 +15,8 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 * [x] [code](/aelgasser/my-birb/tree/add-post-item-widget), Day eight: Extract post item widget
 * [x] [code](/aelgasser/my-birb/tree/mock-data), Day nine: Post model and mock data
 * [x] [code](/aelgasser/my-birb/tree/use-streams), Day ten: Render with StreamBuilder
-* [ ] Day eleven: Stream transforms and failing tests
-* [ ] Day twelve: Real fake data
+* [x] [code](/aelgasser/my-birb/tree/use-posts), Day eleven: Stream transforms and failing tests
+* [ ] Day twelve: (interlude) Introduce Faker
 * [ ] Day thirteen: Rendering images from network
 * [ ] Day fourteen: Authentication
 * [ ] Day fifteen: Configure Firebase Auth for Sign in with Google on Android
