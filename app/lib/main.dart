@@ -1,5 +1,4 @@
-import 'dart:convert';
-
+import 'package:birb/mocks/post_mock.dart';
 import 'package:birb/models/post.dart';
 import 'package:birb/posts_list.dart';
 import 'package:flutter/material.dart';
@@ -60,14 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Stream<List<Post>> _loadPosts(BuildContext context) {
-    return DefaultAssetBundle.of(context)
-            .loadString('assets/posts.json')    
-            .then<List<dynamic>>((String value) => json.decode(value))
-            .asStream()
-            .map(_convertToPosts);
-  }
-
-  List<Post> _convertToPosts(List<dynamic> data) {
-    return data.map((dynamic item) => Post.fromMap(item)).toList();
+    return mockPosts(count: 10);
   }
 }

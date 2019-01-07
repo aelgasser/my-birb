@@ -1,3 +1,4 @@
+import 'package:birb/mocks/post_mock.dart';
 import 'package:birb/models/post.dart';
 import 'package:birb/no_content.dart';
 import 'package:birb/post_item.dart';
@@ -56,19 +57,5 @@ Stream<List<Post>> _streamWithError(String error) {
 }
 
 Stream<List<Post>> _postsStream(int count) {
-  return Stream<List<Post>>.fromIterable(
-    <List<Post>>[
-      List<Post>.generate(count, (int i) => _createPost(i))
-    ]
-  );
-}
-
-Post _createPost(int index) {
-  return Post(
-      id: '$index', 
-      createdAt: DateTime.parse('2019-01-06T20:59:00Z'),
-      imageUrl: 'image for #$index',
-      text: '',
-      username: 'username for #$index'
-    );
+  return mockPosts(count: count);
 }
