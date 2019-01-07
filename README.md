@@ -14,7 +14,7 @@ https://dev.to/abraham/a-month-of-flutter-47c4
 * [x] [code](/aelgasser/my-birb/tree/list-of-posts), Day seven: A list of posts
 * [x] [code](/aelgasser/my-birb/tree/add-post-item-widget), Day eight: Extract post item widget
 * [x] [code](/aelgasser/my-birb/tree/mock-data), Day nine: Post model and mock data
-* [ ] Day ten: Render with StreamBuilder
+* [x] [code](/aelgasser/my-birb/tree/use-streams), Day ten: Render with StreamBuilder
 * [ ] Day eleven: Stream transforms and failing tests
 * [ ] Day twelve: Real fake data
 * [ ] Day thirteen: Rendering images from network
