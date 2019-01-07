@@ -1,3 +1,4 @@
+import 'package:birb/models/post.dart';
 import 'package:birb/no_content.dart';
 import 'package:birb/post_item.dart';
 import 'package:birb/posts_list.dart';
@@ -50,14 +51,24 @@ void main() {
   });
 }
 
-Stream<List<int>> _streamWithError(String error) {
-  return Future<List<int>>.error(error).asStream();
+Stream<List<Post>> _streamWithError(String error) {
+  return Future<List<Post>>.error(error).asStream();
 }
 
-Stream<List<int>> _postsStream(int count) {
-  return Stream<List<int>>.fromIterable(
-    <List<int>>[
-      List<int>.generate(count, (int i) => i)
+Stream<List<Post>> _postsStream(int count) {
+  return Stream<List<Post>>.fromIterable(
+    <List<Post>>[
+      List<Post>.generate(count, (int i) => _createPost(i))
     ]
   );
+}
+
+Post _createPost(int index) {
+  return Post(
+      id: '$index', 
+      createdAt: DateTime.parse('2019-01-06T20:59:00Z'),
+      imageUrl: 'image for #$index',
+      text: '',
+      username: 'username for #$index'
+    );
 }
