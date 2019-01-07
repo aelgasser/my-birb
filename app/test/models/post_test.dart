@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:birb/models/post.dart';
 import 'package:test/test.dart';
 
@@ -19,6 +16,11 @@ void main() {
 }
 
 dynamic _postData() async {
-  final dynamic data = await File('../assets/posts.json').readAsString();
-  return json.decode(data).first;
+  return <String, dynamic>{
+    'id': '7d3d8bd1-b9a6-4e1f-8e4e-dca6f4861441',
+    'imageUrl': 'https://source.unsplash.com/AEVAMhago-s',
+    'createdAt': '2018-12-09T15:35:54.006Z',
+    'text': '',
+    'username': 'woodstock'
+  };    
 }
