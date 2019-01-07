@@ -41,6 +41,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final Stream<List<int>> _posts = Stream<List<int>>.fromIterable(
+    <List<int>>[
+      List<int>.generate(10, (int i) => i),
+    ]
+  );
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         elevation: 0.0,
       ),
-      body: const PostsList(),
+      body: PostsList(_posts),
     );
   }
 }
